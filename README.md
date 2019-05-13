@@ -24,7 +24,7 @@ You can play with the settings form the GenerateMoreData pannel(I know, I am bad
 
 ## Step 2: Testing of virtual data(Simulated data).
 ### 2a.Installing requirements
-Download the [Anaconda](https://www.anaconda.com/distribution/) along with desired python version. In this project, we will be using windows, conda version 4.6, python 3.7.  
+Download the [Anaconda](https://www.anaconda.com/distribution/) along with desired python version. In this project, we will be using windows, conda version 4.6, python 3.6.  
 After installing anaconda, open Anaconda Prompt as Administrator and create a new virtual environment by copying following command. 
 
 ```
@@ -36,8 +36,21 @@ Then activate the newely created enviroment.
 (env) C:\Windows\system32>
 ```
 
+Install tensorflow-gpu in this environment by issuing:  
 
-
-
-
+```
+(env) C:\Windows\system32> pip install --ignore-installed --upgrade tensorflow
+```
+If you want to use GPU version of the tensorflow you can follow instructions in this [youtube video](https://www.youtube.com/watch?v=59duINoc8GM).  
+Install the other necessary packages by issuing the following commands:
+```
+(tensorflow1) C:\> conda install -c anaconda protobuf
+(tensorflow1) C:\> pip install pillow
+(tensorflow1) C:\> pip install lxml
+(tensorflow1) C:\> pip install Cython
+(tensorflow1) C:\> pip install jupyter
+(tensorflow1) C:\> pip install matplotlib
+(tensorflow1) C:\> pip install pandas
+(tensorflow1) C:\> pip install opencv-python
+```
 
