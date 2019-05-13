@@ -54,7 +54,7 @@ Install the other necessary packages by issuing the following commands:
 (env) C:\> pip install opencv-python
 ```
 
-Now all the necessory instalations are finished open spyder simply by typing and press enter  
+Now all the necessary installations are finished open spyder simply by typing and press enter  
 
 ```
 (env) C:\> spyder
@@ -63,4 +63,15 @@ Now all the necessory instalations are finished open spyder simply by typing and
 Now spyder should be up and running.  
 ### 2b. Running the scripts
 
-From spyder navigate to CNN_Models and open 01CNN.py and run it (Dont forget to change the path location) 
+From spyder navigate to CNN_Models and open 01CNN.py and run it (Don't forget to change the path location).  
+Test 1: Use test 1 data from Dropbox, This is different sets of virtual data in for training and validating the model with 6 classes.  
+Test 2: Use test 2 data, This is train with virtual data and testing with 6 classes.  
+Test 3: Use test 2 data, This is train with virtual data and testing with 4 classes (Coil, Barrel, forklift, Pallet).  
+
+use the 02CNN.py for remaining tests  
+Test 4: Use test 2 data, This is train with virtual data and testing with 4 classes (Coil, Barrel, forklift, Pallet).  
+This model generates a confusion matrix.
+
+## Step 3: Using Inception v2 Algorithm
+
+
