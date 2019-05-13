@@ -17,7 +17,7 @@ If there are any problems in running the script we made a blend file in which th
 folder
 
 <p align="center">
-  <img src="Images/1.JPG" width="350" title="hover text">
+  <img src="Images/1.JPG" width="750" title="hover text">
 </p>
 
 You can play with the settings form the GenerateMoreData pannel(I know, I am bad at giving names) after your desired settings just click ‘Animation’ form the panel to the right side.(Do not forget to change the resolution and folder path to save the image files code automatically creates a floder in the path).  
