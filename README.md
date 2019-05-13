@@ -22,8 +22,8 @@ folder
   
 You can play with the settings form the GenerateMoreData pannel(I know, I am bad at giving names) after your desired settings just click ‘Animation’ form the panel to the right side.(Do not forget to change the resolution and folder path to save the image files code automatically creates a floder in the path).  
 
-##Step 2: Testing of virtual data(Simulated data).
-###2a.Installing requirements
+## Step 2: Testing of virtual data(Simulated data).
+### 2a.Installing requirements
 [Anaconda](https://www.anaconda.com/distribution/). Download the anaconda along with desired python version. In this project, we will be using windows, conda version 4.6, python 3.7.  
 After installing anaconda, open Anaconda Prompt as Administrator and create a new virtual environment by copying following command. 
 
