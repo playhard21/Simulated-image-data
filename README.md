@@ -61,6 +61,11 @@ Now all the necessary installations are finished open spyder simply by typing an
 ```
 
 Now spyder should be up and running.  
+If you have any errors installing you can use copy of my virtual enviroment simply by naviating to installation folder
+```
+(env) C:\Users\aravi\Desktop\team-project-deep-learning-with-simulation\installation> pip install -r requirements.txt
+```
+
 ### 2b. Running the scripts
 
 From spyder navigate to CNN_Models and open 01CNN.py and run it (Don't forget to change the path location).  
@@ -71,6 +76,8 @@ Test 3: Use test 2 data, This is train with virtual data and testing with 4 clas
 use the 02CNN.py for remaining tests  
 Test 4: Use test 2 data, This is train with virtual data and testing with 4 classes (Coil, Barrel, forklift, Pallet).  
 This model generates a confusion matrix.
+
+you can download database of actual [images](https://drive.google.com/drive/u/0/folders/1UosDxgtYeyWa2ZRiTq9JWH4FvXg_3WKk).  
 
 ## Step 3: Using Inception v2 Algorithm
 
