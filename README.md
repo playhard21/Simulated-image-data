@@ -8,8 +8,8 @@ step 1: Generation of simulated data (Virtual Data).
 step 2: Testing of virtual data.
 step 3: Using Inception v2 Algorithms.
 
-##Step 1 :
-###Prerequisites 
+## Step 1 :
+### Prerequisites 
 
 [Blender - Install blender  form](https://www.blender.org/download/).
 
