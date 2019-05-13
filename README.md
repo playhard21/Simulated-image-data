@@ -36,19 +36,24 @@ Then activate the newely created enviroment.
 (env) C:\Windows\system32>
 ```
 
-Install tensorflow-gpu in this environment by issuing:  
+Install tensorflow in this environment by issuing:  
 
 ```
 (env) C:\Windows\system32> pip install --ignore-installed --upgrade tensorflow
 ```
-If you want to use GPU version of the tensorflow you can follow instructions in this [youtube video](https://www.youtube.com/watch?v=59duINoc8GM).  
+If you want to use GPU version of the tensorflow you can follow instructions in this [youtube video](https://www.youtube.com/watch?v=59duINoc8GM). 
+Install keras and other packages  
+```
+(tensorflow1) C:\> conda install -c anaconda keras
+(tensorflow1) C:\> conda install -c anaconda keras-gpu // skip this if you want to use only CPU version
+(tensorflow1) C:\> conda install spyder
+(tensorflow1) C:\> conda install -c anaconda scikit-learn
+```
 Install the other necessary packages by issuing the following commands:
 ```
-(tensorflow1) C:\> conda install -c anaconda protobuf
-(tensorflow1) C:\> pip install pillow
+
 (tensorflow1) C:\> pip install lxml
 (tensorflow1) C:\> pip install Cython
-(tensorflow1) C:\> pip install jupyter
 (tensorflow1) C:\> pip install matplotlib
 (tensorflow1) C:\> pip install pandas
 (tensorflow1) C:\> pip install opencv-python
