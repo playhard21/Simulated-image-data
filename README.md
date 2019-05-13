@@ -25,12 +25,19 @@ You can play with the settings form the GenerateMoreData pannel(I know, I am bad
 ##Step 2: Testing of virtual data(Simulated data).
 ###2a.Installing requirements
 [Anaconda](https://www.anaconda.com/distribution/). Download the anaconda along with desired python version. In this project, we will be using windows, conda version 4.6, python 3.7.  
-After installing anaconda, open Anaconda Prompt as Administrator and create a new virtual environment by copying following commend. 
+After installing anaconda, open Anaconda Prompt as Administrator and create a new virtual environment by copying following command. 
 
 ```
-C:\> conda create -n env  pip python=3.6
-
+conda create -n env  pip python=3.6
 ```
+Then activate the newely created enviroment.  
+```
+(base) C:\Windows\system32>conda activate env
+(env) C:\Windows\system32>
+```
+
+
+
 
 
 
