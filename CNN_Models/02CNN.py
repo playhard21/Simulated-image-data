@@ -53,13 +53,13 @@ batch_size = 128
 datagen_train = ImageDataGenerator()
 datagen_validation = ImageDataGenerator()
 
-train_generator = datagen_train.flow_from_directory(r'C:\Users\aravi\Desktop\test3\train',
+train_generator = datagen_train.flow_from_directory(r'C:\Users\aravi\Desktop\test\train',
                                                     target_size=(pic_size,pic_size),
                                                     batch_size=batch_size,
                                                     class_mode='categorical',
                                                     shuffle=False)
 
-validation_generator = datagen_validation.flow_from_directory(r'C:\Users\aravi\Desktop\test3\test',
+validation_generator = datagen_validation.flow_from_directory(r'C:\Users\aravi\Desktop\test\test',
                                                     target_size=(pic_size,pic_size),
                                                     batch_size=batch_size,
                                                     class_mode='categorical',
@@ -171,7 +171,6 @@ y_test = validation_generator.classes
 print(y_test)
 print(len(y_test))
 class_names = validation_generator.class_indices.keys()
-y_pred = y_pred[:1103]
 
 from sklearn.metrics import confusion_matrix
 import itertools

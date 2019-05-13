@@ -42,20 +42,25 @@ Install tensorflow in this environment by issuing:
 (env) C:\Windows\system32> pip install --ignore-installed --upgrade tensorflow
 ```
 If you want to use GPU version of the tensorflow you can follow instructions in this [youtube video](https://www.youtube.com/watch?v=59duINoc8GM). 
-Install keras and other packages  
-```
-(tensorflow1) C:\> conda install -c anaconda keras
-(tensorflow1) C:\> conda install -c anaconda keras-gpu // skip this if you want to use only CPU version
-(tensorflow1) C:\> conda install spyder
-(tensorflow1) C:\> conda install -c anaconda scikit-learn
-```
+
 Install the other necessary packages by issuing the following commands:
 ```
-
-(tensorflow1) C:\> pip install lxml
-(tensorflow1) C:\> pip install Cython
-(tensorflow1) C:\> pip install matplotlib
-(tensorflow1) C:\> pip install pandas
-(tensorflow1) C:\> pip install opencv-python
+(env) C:\> conda install spyder
+(env) C:\> pip install matplotlib
+(env) C:\> pip install pandas
+(env) C:\> conda install -c anaconda scikit-learn
+(env) C:\> pip install lxml
+(env) C:\> pip install Cython
+(env) C:\> pip install opencv-python
 ```
 
+Now all the necessory instalations are finished open spyder simply by typing and press enter  
+
+```
+(env) C:\> spyder
+```
+
+Now spyder should be up and running.  
+### 2b. Running the scripts
+
+From spyder navigate to CNN_Models and open 01CNN.py and run it (Dont forget to change the path location) 

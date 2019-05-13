@@ -2,7 +2,7 @@
 """
 Created on Thu Dec 13 11:41:29 2018
 
-@author: karri
+@author: Aravind karri
 """
 
 # Part 1 - Building the CNN
@@ -58,17 +58,17 @@ train_datagen = ImageDataGenerator(rescale = 1./255,
 
 test_datagen = ImageDataGenerator(rescale = 1./255)
 
-training_set = train_datagen.flow_from_directory(r'C:\Users\aravi\Desktop\test4\train',
+training_set = train_datagen.flow_from_directory(r'C:\Users\aravi\Desktop\test\train',
                                                  target_size = (64, 64),
                                                  batch_size = 32,
                                                  class_mode = 'binary')
 
-test_set = test_datagen.flow_from_directory(r'C:\Users\aravi\Desktop\test4\test',
+test_set = test_datagen.flow_from_directory(r'C:\Users\aravi\Desktop\test\test',
                                             target_size = (64, 64),
                                             batch_size = 32,
                                             class_mode = 'binary')
 
-validation_generator = test_datagen.flow_from_directory(r'C:\Users\aravi\Desktop\test4\test',
+validation_generator = test_datagen.flow_from_directory(r'C:\Users\aravi\Desktop\test\test',
                                                     target_size=(64,64),
                                                     batch_size=128,
                                                     class_mode='categorical',
@@ -114,6 +114,7 @@ plt.plot(x.history['val_acc'], label='Validation Accuracy')
 plt.legend(loc='lower right')
 plt.show()
 
+ '''
 # show the confusion matrix of our predictions
 
 predictions = classifier.predict_generator(generator=validation_generator)
@@ -194,7 +195,7 @@ plot_confusion_matrix(y_test, y_pred, classes=class_names, normalize=True,
 
 plt.show()
 
-
+ '''
 
 
 
