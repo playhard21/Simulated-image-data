@@ -1,4 +1,4 @@
-# This repository is for maintaining structure for Team Project Deep learning with simulation
+# This repository is for Team Project Deep learning with simulation
 
 In order to access all the files clone this repository.
 
