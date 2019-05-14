@@ -163,7 +163,7 @@ Now that training is complete, the last step is to generate the frozen inference
 python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
 ```
 This creates a frozen_inference_graph.pb file in the \object_detection\inference_graph folder. The .pb file contains the object detection classifier.  
-The object detection classifier is all ready to go! I’ve written Python scripts to test it out on an image, video, or webcam feed.
+The object detection classifier is all ready to go! we have Python scripts to test it out on an image, video, or webcam feed.
 <p align="center">
   <img src="Images/6.jpg" width="750" title="Testing on image">
 </p>
