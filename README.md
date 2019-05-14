@@ -77,6 +77,10 @@ use the 02CNN.py for remaining tests
 Test 4: Use test 2 data, This is train with virtual data and testing with 4 classes (Coil, Barrel, forklift, Pallet).  
 This model generates a confusion matrix.
 
+<p align="center">
+  <img src="Images/2.JPG" width="750" title="Confusion matrix for test-4">
+</p>
+
 you can download database of actual [images](https://drive.google.com/drive/u/0/folders/1UosDxgtYeyWa2ZRiTq9JWH4FvXg_3WKk).  
 
 ## Step 3: Using Inception v2 Algorithm
@@ -128,8 +132,17 @@ Run the following commands from the C:\tensorflow1\models\research directory:
 For labeling we used the [tool](https://github.com/tzutalin/labelImg). Labeling is done just by runnig the python code.
 
 <p align="center">
-  <img src="Images/2.JPG" width="750" title="Loaded model in blender">
+  <img src="Images/3.JPG" width="750" title="Image labeling tool">
 </p>
 
+From the \object_detection directory, issue the following command to begin training:  
 
+```
+python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
+```
+If everything has been set up correctly, TensorFlow will initialize the training. The initialization can take up to 30 seconds before the actual training begins. When training begins, it will look like this:
+
+<p align="center">
+  <img src="Images/4.JPG" width="750" title="Anaconda Prompt">
+</p>
 
