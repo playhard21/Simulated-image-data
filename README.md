@@ -125,6 +125,11 @@ Run the following commands from the C:\tensorflow1\models\research directory:
 
 #### 3c.Labeling and run the traning set
 
-For 
+For labeling we used the [tool](https://github.com/tzutalin/labelImg). Labeling is done just by runnig the python code.
+
+<p align="center">
+  <img src="Images/2.JPG" width="750" title="Loaded model in blender">
+</p>
+
 
 
