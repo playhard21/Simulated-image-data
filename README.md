@@ -146,3 +146,24 @@ If everything has been set up correctly, TensorFlow will initialize the training
   <img src="Images/4.jpg" width="750" title="Anaconda Prompt">
 </p>
 
+You can view the progress of the training job by using TensorBoard. To do this, open a new instance of Anaconda Prompt, activate the tensorflow1 virtual environment, change to the C:\tensorflow1\models\research\object_detection directory, and issue the following command:  
+```
+(tensorflow1) C:\tensorflow1\models\research\object_detection>tensorboard --logdir=training
+```
+This will create a webpage on your local machine at YourPCName:6006, which can be viewed through a web browser. The TensorBoard page provides information and graphs that show how the training is progressing.  
+<p align="center">
+  <img src="Images/5.PNG" width="750" title="Tensorboad">
+</p>
+
+The training routine periodically saves checkpoints about every five minutes. You can terminate the training by pressing Ctrl+C while in the command prompt window. I typically wait until just after a checkpoint has been saved to terminate the training. You can terminate training and start it later, and it will restart from the last saved checkpoint. The checkpoint at the highest number of steps will be used to generate the frozen inference graph.
+
+### 3d. Export Inference Graph
+Now that training is complete, the last step is to generate the frozen inference graph (.pb file). From the \object_detection folder, issue the following command, where “XXXX” in “model.ckpt-XXXX” should be replaced with the highest-numbered .ckpt file in the training folder:
+```
+python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
+```
+This creates a frozen_inference_graph.pb file in the \object_detection\inference_graph folder. The .pb file contains the object detection classifier.  
+The object detection classifier is all ready to go! I’ve written Python scripts to test it out on an image, video, or webcam feed.
+<p align="center">
+  <img src="Images/6.JPG" width="750" title="Testing on image">
+</p>
