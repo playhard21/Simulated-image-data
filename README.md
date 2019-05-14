@@ -81,4 +81,50 @@ you can download database of actual [images](https://drive.google.com/drive/u/0/
 
 ## Step 3: Using Inception v2 Algorithm
 
+Copy the tensorflow1 folder from the CNN_Models folder and past in c: of your pc.You need make new virtual enviroment to run this application.  
+
+### 3a. Set up new Anaconda virtual environment
+
+In Anaconda Prompt, create a new virtual environment called “tensorflow1” by issuing the following command:
+```
+C:\> conda create -n tensorflow1 pip python=3.5
+```
+Then, activate the environment by issuing:
+```
+C:\> activate tensorflow1
+```
+Install tensorflow-gpu in this environment by issuing:
+```
+(tensorflow1) C:\> pip install --ignore-installed --upgrade tensorflow-gpu
+```
+Install the other necessary packages by issuing the following commands:
+```
+(tensorflow1) C:\> conda install -c anaconda protobuf
+(tensorflow1) C:\> pip install pillow
+(tensorflow1) C:\> pip install lxml
+(tensorflow1) C:\> pip install Cython
+(tensorflow1) C:\> pip install jupyter
+(tensorflow1) C:\> pip install matplotlib
+(tensorflow1) C:\> pip install pandas
+(tensorflow1) C:\> pip install opencv-python
+```
+(Note: The ‘pandas’ and ‘opencv-python’ packages are not needed by TensorFlow, but they are used in the Python scripts to generate TFRecords and to work with images, videos, and webcam feeds.).  
+
+### 3b. Configure PYTHONPATH environment variable and run setup
+A PYTHONPATH variable must be created that points to the \models, \models\research, and \models\research\slim directories. Do this by issuing the following commands (from any directory):
+```
+(tensorflow1) C:\> set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim
+```
+(Note: Every time the "tensorflow1" virtual environment is exited, the PYTHONPATH variable is reset and needs to be set up again.)  
+
+Run the following commands from the C:\tensorflow1\models\research directory:
+```
+(tensorflow1) C:\tensorflow1\models\research> python setup.py build
+(tensorflow1) C:\tensorflow1\models\research> python setup.py install
+```
+
+#### 3c.Labeling and run the traning set
+
+For 
+
 
