@@ -129,7 +129,7 @@ Run the following commands from the C:\tensorflow1\models\research directory:
 
 #### 3c.Labeling and run the traning set
 
-For labeling we used the [tool](https://github.com/tzutalin/labelImg). Labeling is done just by runnig the python code.
+For labeling we used the [tool](https://github.com/tzutalin/labelImg). Labeling is done just by runnig the python code and selecting the object and labeling it with the class name.
 
 <p align="center">
   <img src="Images/3.JPG" width="750" title="Image labeling tool">
