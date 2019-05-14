@@ -143,6 +143,6 @@ python train.py --logtostderr --train_dir=training/ --pipeline_config_path=train
 If everything has been set up correctly, TensorFlow will initialize the training. The initialization can take up to 30 seconds before the actual training begins. When training begins, it will look like this:
 
 <p align="center">
-  <img src="Images/4.JPG" width="750" title="Anaconda Prompt">
+  <img src="Images/4.jpg" width="750" title="Anaconda Prompt">
 </p>
 
